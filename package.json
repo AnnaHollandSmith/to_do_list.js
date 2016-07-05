@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/toDoTest"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,10 @@
   "homepage": "https://github.com/AnnaHollandSmith/to_do_list.js#readme",
   "dependencies": {
     "chai": "^3.5.0",
+    "http-server": "^0.9.0",
     "mocha": "^2.5.3",
     "sinon": "^1.17.4"
   },
-  
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
