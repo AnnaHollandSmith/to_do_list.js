@@ -2,16 +2,11 @@
 
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var ToDo = require('../src/toDo.js')
-
+var ToDo = require('../src/toDo.js').ToDo
 
 
 describe('create a to-do', function(){
   var toDo = new ToDo();
-
-  it('can instantiate a to-do object',function(){
-      expect(toDo).to.be.an.instanceof(ToDo);
-    })
 
   it('can create a to-do list',function(){
     expect(toDo.tasks).to.be.empty;
@@ -26,7 +21,7 @@ describe('create a to-do', function(){
   it('returns an HTML unordered list', function() {
     toDo.add('Clean Room');
     toDo.add('Buy Milk')
-    expect(toDo.returnList()).to.eql("<ul><li>Clean Room</li><li>Buy Milk</li></ul>");
+    expect(toDo.returnList()).to.eql("<li>Clean Room</li><li>Buy Milk</li>");
   })
 
-})
+});
