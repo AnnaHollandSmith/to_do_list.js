@@ -9,8 +9,23 @@
 <body>
   <h1>To Do</h1>
   <h2>List</h2>
+  <form method='post' action='/addTask'>
+    <label for='task'>
+      Please enter the task:
+    </label>
+    <input id='task' type='text' value='GET'>
+    <input id='submit' type='submit' value='Submit'>
+    </form>
+
   <ul id="tasks-to-do">
   </ul>
 </body>
+
+<script>
+var task = document.getElementById('task');
+console.log(task.value);
+</script>
+
+
 <script src="./src/toDo.js"></script>
 <script src="index.js"></script>

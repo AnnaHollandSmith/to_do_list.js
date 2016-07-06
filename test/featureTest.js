@@ -19,5 +19,10 @@ describe('homepage', function() {
     this.browser.assert.text('#tasks-to-do', 'Get milkDo cleaning');
   });
 
+  it('should stay on current page after submit is triggered', function(){
+    this.browser.pressButton('#submit');
+    this.browser.visit('/');
+  });
+
 
 });
