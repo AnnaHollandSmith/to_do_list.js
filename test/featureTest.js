@@ -15,5 +15,9 @@ describe('homepage', function() {
     this.browser.assert.text('title', 'To Do List');
   });
 
+  it('should show a list', function() {
+    this.browser.assert.text('#tasks-to-do', 'Get milkDo cleaning');
+  });
+
 
 });
