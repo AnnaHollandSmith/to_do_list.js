@@ -24,5 +24,10 @@ describe('homepage', function() {
     this.browser.visit('/');
   });
 
+  it('should display tasks after they have been submitted', function(){
+    this.browser.fill('task', 'shopping');
+    this.browser.pressButton('#submit');
+    this.browser.assert.text('#tasks-to-do', 'Get milkDo cleaningshopping');
 
+  });
 });

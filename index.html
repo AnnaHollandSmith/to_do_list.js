@@ -13,8 +13,8 @@
     <label for='task'>
       Please enter the task:
     </label>
-    <input id='task' type='text' value='GET'>
-    <input id='submit' type='submit' value='Submit'>
+    <input id='task' type='text' value='task'>
+    <input onclick='showTask()' id='submit' type='submit' value='Submit'>
     </form>
 
   <ul id="tasks-to-do">
@@ -22,9 +22,14 @@
 </body>
 
 <script>
-var task = document.getElementById('task');
-console.log(task.value);
+function showTask(){
+  var taskEnter = document.getElementById('task').value;
+
+  document.getElementById('tasks-to-do').innerHTML = taskEnter;
+}
 </script>
+
+
 
 
 <script src="./src/toDo.js"></script>
