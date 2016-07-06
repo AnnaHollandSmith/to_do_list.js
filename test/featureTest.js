@@ -23,6 +23,4 @@ describe('homepage', function() {
     this.browser.pressButton('#submit');
     this.browser.visit('/');
   });
-
-
 });

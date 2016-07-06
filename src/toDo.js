@@ -15,6 +15,7 @@
   };
 
   ToDo.prototype.returnList = function () {
+    this.html = []
     for(var i = 0; i < this.tasks.length; i++) {
       this.html.push("<li>" + this.tasks[i] + "</li>");
     }
