@@ -12,10 +12,8 @@ describe('homepage', function() {
     this.browser.visit('/', done);
   });
   it('should show a title', function() {
-    this.browser.assert.text('title', 'To Do List')
+    this.browser.assert.text('title', 'To Do List');
   });
-  // it('should have a form to add tasks', function() {
-  //   this.browser.assert.elements('ul', )
-  // })
+
 
 });
