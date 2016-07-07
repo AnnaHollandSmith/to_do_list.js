@@ -4,6 +4,7 @@
   function ToDo(){
     this.tasks = [];
     this.html =[]
+    this.isComplete = false;
   };
 
   ToDo.prototype.tasks = function() {
@@ -20,6 +21,14 @@
       this.html.push("<li>" + this.tasks[i] + "</li>");
     }
     return this.html.join('');
+  };
+
+  ToDo.prototype.complete = function () {
+    this.isComplete = true;
+  };
+
+  ToDo.prototype.checkComplete = function () {
+    return this.isComplete;
   };
 
   exports.ToDo=ToDo;

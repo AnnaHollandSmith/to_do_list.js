@@ -24,5 +24,19 @@ describe('create a to-do', function(){
     expect(toDo.returnList()).to.eql("<li>Clean Room</li><li>Buy Milk</li>");
   });
 
+  describe ("#complete", function() {
+  it("completes a task", function() {
+    toDo.complete();
+    expect(toDo.isComplete).to.equal(true);
+  });
+});
+
+describe ("#checkComplete", function() {
+  it("checks if taks is completed", function() {
+    toDo.complete();
+    expect(toDo.checkComplete()).to.equal(true);
+  });
+});
+
 
 });
