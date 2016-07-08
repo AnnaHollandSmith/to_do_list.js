@@ -10,6 +10,7 @@ function addTask(){
 }
 
 function complete(i){
-  console.log(i)
-
+  new_list._list[i].finish();
+  var task = document.getElementById("list_"+i);
+  task.className += "completed";
 }
