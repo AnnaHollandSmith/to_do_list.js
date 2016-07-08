@@ -31,7 +31,7 @@ describe('title page', function() {
   it('should mark tasks as complete', function() {
     browser.fill('new_task', 'call grandma');
     browser.pressButton('submit');
-    browser.pressButton('complete');
+    browser.pressButton('completed');
     browser.assert.hasClass('li', 'completed');
   });
 });

@@ -22,7 +22,7 @@ describe('List', function() {
 
   it('provides an unordered list of all the tasks added', function() {
     list.addItem('call grandma');
-    var template = '<ul><li id="list_0">call grandma</li></ul>';
-    expect(list.toHtml()).html.to.eq(template);
+    var template = '<ul><li id=\'list_0\'>call grandma<input id="submit" type="submit" onclick="complete(0)" value="&#9989" name="completed"></li></ul>';
+    expect(list.toHtml()).to.eq(template);
   });
 });
