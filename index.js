@@ -20,8 +20,9 @@ function addApiTask(newItem){
 
 function complete(i){
   new_list._list[i].finish();
-  var task = document.getElementById("list_"+i);
+  // var task = document.getElementById("list_"+i);
   // task.className += "completed";
+  document.getElementById('list').innerHTML = new_list.toHtml();
 }
 
 function resetContent(){
