@@ -8,20 +8,21 @@ function addTask(){
   console.log(new_list._list)
   var newItem = document.getElementById("task_input").value
   new_list.addItem(newItem);
+  renderAndReset();
+}
+
+function renderAndReset() {
   document.getElementById('list').innerHTML = new_list.toHtml();
   resetContent();
 }
 
-function addApiTask(newItem){
-  new_list.addItem(newItem);
-  document.getElementById('list').innerHTML = new_list.toHtml();
-  resetContent();
+function addApiTask(item){
+  new_list.addItem(item);
+  renderAndReset();
 }
 
 function complete(i){
   new_list._list[i].finish();
-  // var task = document.getElementById("list_"+i);
-  // task.className += "completed";
   document.getElementById('list').innerHTML = new_list.toHtml();
 }
 
