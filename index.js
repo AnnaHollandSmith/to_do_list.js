@@ -5,7 +5,6 @@ window.addEventListener("load", function() {
 });
 
 function addTask(){
-  console.log(new_list._list)
   var newItem = document.getElementById("task_input").value
   new_list.addItem(newItem);
   renderAndReset();

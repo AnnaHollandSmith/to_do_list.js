@@ -25,13 +25,14 @@ describe('title page', function() {
     browser.assert.status(200);
     browser.fill('new_task', 'call grandma');
     browser.pressButton('submit');
-    browser.assert.text('li', 'call grandma');
+    browser.assert.text('#list_16', 'call grandma');
   });
 
   it('should mark tasks as complete', function() {
     browser.fill('new_task', 'call grandma');
     browser.pressButton('submit');
     browser.pressButton('completed');
-    browser.assert.hasClass('li', 'completed');
+    browser.assert.element('#list_0');
   });
+
 });
