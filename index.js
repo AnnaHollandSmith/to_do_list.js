@@ -15,8 +15,8 @@ function renderAndReset() {
   resetContent();
 }
 
-function addApiTask(item){
-  new_list.addItem(item);
+function addApiTask(item, objectStatus){
+  new_list.addItem(item, objectStatus);
   renderAndReset();
 }
 
@@ -40,9 +40,11 @@ function xhttp(){
   xhttp.onreadystatechange = function(){
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       var myJson = JSON.parse(xhttp.responseText)
+      console.log(myJson)
       var listItems = myJson.map(function(object){
         var item = object.text;
-        addApiTask(item)
+        var objectStatus = object.completed;
+        addApiTask(item, objectStatus)
       }
     )}
   }
