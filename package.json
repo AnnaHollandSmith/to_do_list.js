@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "to_do_list",
   "version": "1.0.0",
   "description": "",
@@ -17,6 +18,12 @@
     "url": "https://github.com/AnnaHollandSmith/to_do_list.js/issues"
   },
   "homepage": "https://github.com/AnnaHollandSmith/to_do_list.js#readme",
+=======
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "Front-end To-Do List application",
+  "main": "index.js",
+>>>>>>> 039356faedc8f7bb34040fbfac8c00bd90338ad3
   "dependencies": {
     "chai": "^3.5.0",
     "http-server": "^0.9.0",
@@ -26,8 +33,29 @@
     "zombie": "^4.2.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
     "sinon": "^1.17.4"
   }
+=======
+    "chai-html": "0.0.4-2",
+    "http-server": "^0.9.0",
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joestephens/todo.git"
+  },
+  "author": "Joe Lewis Coram Stephens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joestephens/todo/issues"
+  },
+  "homepage": "https://github.com/joestephens/todo#readme"
+>>>>>>> 039356faedc8f7bb34040fbfac8c00bd90338ad3
 }
