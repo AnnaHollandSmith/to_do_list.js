@@ -51,14 +51,19 @@ describe('title page', function() {
     browser.assert.status(200);
     browser.fill('new_task', 'call grandma');
     browser.pressButton('submit');
-    browser.assert.text('li', 'call grandma');
+    browser.assert.text('#list_16', 'call grandma');
   });
 
   it('should mark tasks as complete', function() {
     browser.fill('new_task', 'call grandma');
     browser.pressButton('submit');
     browser.pressButton('completed');
+<<<<<<< HEAD
     browser.assert.hasClass('li', 'completed');
 >>>>>>> 039356faedc8f7bb34040fbfac8c00bd90338ad3
+=======
+    browser.assert.element('#list_0');
+>>>>>>> 47e02289e8d252490d6670174104034f08f6c9ad
   });
+
 });
